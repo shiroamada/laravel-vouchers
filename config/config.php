@@ -15,7 +15,7 @@ return [
     /*
      * Database pivot table name for vouchers and users relation
      */
-    'relation_table' => 'user_voucher',
+    'pivot_table' => 'user_voucher',
 
     /*
      * List of characters that will be used for voucher code generation.
@@ -52,7 +52,7 @@ return [
     /*
      * The user model that belongs to vouchers.
      */
-    'user_model' => \App\User::class,
+    'user_model' => \App\Models\User::class,
 
     /*
      * The user table that belongs to vouchers.
