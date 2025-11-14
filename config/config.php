@@ -8,6 +8,11 @@ return [
     'table' => 'vouchers',
 
     /*
+     * Model to use
+     */
+    'model' => BeyondCode\Vouchers\Models\Voucher::class,
+
+    /*
      * Database pivot table name for vouchers and users relation
      */
     'relation_table' => 'user_voucher',
@@ -50,10 +55,9 @@ return [
     'user_model' => \App\User::class,
 
     /*
-     * The user model that belongs to vouchers.
+     * The user table that belongs to vouchers.
      */
     'user_table' => 'users',
-
 
     /*
      * The user table reference key name
